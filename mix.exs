@@ -52,7 +52,7 @@ defmodule PhoenixSass.MixProject do
     [
       {:sass_compiler, "~> 0.1"},
       {:temp, "~> 0.4", only: :test},
-      {:excoveralls, "~> 0.10", only: [:dev, :test]},
+      {:excoveralls, "~> 0.17", only: [:dev, :test]},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
     ]
   end
