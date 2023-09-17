@@ -93,9 +93,10 @@ jobs:
           push: true
 
       - name: "[Release] Delete temporary tag"
-        uses: dev-drprasad/delete-tag-and-release@v0.1.2
+        uses: dev-drprasad/delete-tag-and-release@v1.0
         with:
           delete_release: false
+          github_token: ${{ secrets.G_ITHUB_TOKEN }}
           tag_name: ${{env.RELEASE_VERSION}}
 
       - name: "[Release] Create new release"
